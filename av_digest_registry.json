@@ -2,10 +2,10 @@
   "ongoing_stories": [
     {
       "id": "china-permit-freeze",
-      "headline": "China nationwide AV permit freeze",
+      "headline": "China nationwide AV regulatory cooling-off following Baidu Apollo Go Wuhan mass outage",
       "first_seen": "2026-04-28",
-      "last_status": "Active — no resumption timeline confirmed as of late May 2026. All new AV permits suspended. Fleet additions, new test programmes, and new city expansions blocked. Existing services continue to operate.",
-      "last_updated": "2026-05-31",
+      "last_status": "Active — Three-ministry joint directive (MIIT + Ministry of Public Security + Ministry of Transport) mandates cooling-off through at least end of June 2026. No new commercial permits, fleet expansions, new testing area applications, or new city launches permitted for any operator. Operators must pass a cloud-resilience stress test (demonstrating fleet operability if primary cloud connectivity is severed/cyberattacked) before resumption. WeRide and Pony.ai existing operations confirmed normal under current permits. Apollo Go Wuhan service remains suspended pending investigation. July 2026 resumption possible if stress tests pass; no official confirmation yet.",
+      "last_updated": "2026-06-01",
       "affected_companies": ["Apollo Go", "WeRide", "Pony.ai"],
       "status_change_triggers": [
         "Official MIIT or Ministry of Transport announcement on resumption or extension",
@@ -13,14 +13,14 @@
         "Any official timeline given or revised",
         "Any additional operator sanctioned"
       ],
-      "notes": "Triggered by March 31, 2026 Baidu Apollo Go mass-stall incident in Wuhan — 100+ vehicles simultaneously halted by software failure, passengers trapped up to 2 hours. Three central ministries convened all eight major robotaxi operators. Stock impact at announcement: PONY -5.5%, WRD -4.7%."
+      "notes": "Triggered by March 31, 2026 Baidu Apollo Go mass-stall incident in Wuhan — ~100 vehicles simultaneously halted on elevated expressways by cloud communication failure, passengers trapped up to 2 hours. Three central ministries convened all eight major robotaxi operators. Stock impact at announcement: PONY -5.5%, WRD -4.7%, BIDU -2.8% (HK). Status changed June 1: Carnewschina (May 29) confirmed cooling-off is through at least end of June 2026 — previously recorded as 'no timeline confirmed'."
     },
     {
       "id": "waymo-nhtsa-recall",
       "headline": "Waymo NHTSA recall — 3,791 vehicles, flooding defect",
       "first_seen": "2026-05-12",
-      "last_status": "Open — interim fix deployed (tighter weather restrictions, updated map data) but no permanent fix submitted. NHTSA has flagged in writing that no permanent fix has been received. Ongoing flooding incidents in Texas and Atlanta through late May have resulted in additional service suspensions.",
-      "last_updated": "2026-05-31",
+      "last_status": "Open — Interim OTA patch deployed but failed: second Atlanta flooding incident occurred within 14 days of patch deployment. No permanent fix submitted to NHTSA. Additional full-service operational pauses active in Atlanta and San Antonio (in addition to prior freeway suspensions). NHTSA cites 100% defect rate on affected vehicles.",
+      "last_updated": "2026-06-01",
       "affected_companies": ["Waymo"],
       "status_change_triggers": [
         "Permanent fix submitted or approved by NHTSA",
@@ -28,14 +28,14 @@
         "NHTSA closes or escalates the investigation",
         "Waymo issues a new interim fix"
       ],
-      "notes": "Recall covers 5th- and 6th-generation Waymo Driver systems manufactured from 2022 through April 20, 2026. Initiated after an unoccupied vehicle was swept into a San Antonio creek on April 20 due to a software defect causing AVs to slow but not stop when encountering flooded roads at higher speeds."
+      "notes": "Recall covers 3,791 5th- and 6th-gen Waymo Driver ADS vehicles. Triggered by April 20 San Antonio incident (vehicle swept into creek). Additional documented failures include crossing active fire hoses and blocking ambulance access. Status changed June 1: Atlanta full-service pause added; second flooding incident confirmed post-patch."
     },
     {
       "id": "waymo-freeway-suspension",
-      "headline": "Waymo freeway ride suspension — construction zone edge cases",
+      "headline": "Waymo freeway ride suspension — construction zone and flood edge cases",
       "first_seen": "2026-05-21",
-      "last_status": "Ongoing — surface streets operational in all affected cities; freeway rides suspended pending software update. Atlanta city operations were also paused briefly but have since resumed per Waymo. Affected cities: San Francisco, Los Angeles, Phoenix, Miami.",
-      "last_updated": "2026-05-31",
+      "last_status": "Ongoing — Freeway rides suspended in San Francisco, Los Angeles, Phoenix, and Miami. Full-service pauses separately active in Atlanta and San Antonio due to flooding incidents. Surface streets operational in all four primary cities. Waymo states resumption expected 'soon'; no confirmed timeline as of 2026-06-01.",
+      "last_updated": "2026-06-01",
       "affected_companies": ["Waymo"],
       "status_change_triggers": [
         "Official freeway resumption announced by Waymo",
@@ -43,10 +43,26 @@
         "Root cause publicly disclosed",
         "Software fix confirmed deployed"
       ],
-      "notes": "Triggered May 21 after robotaxis were observed struggling with highway construction zones. A viral incident on X showed a vehicle driving through traffic cones. Waymo proactively suspended all freeway rides across the US network and paused Atlanta operations while issuing a software fix."
+      "notes": "Triggered May 21 after videos showed vehicle driving through construction cones on freeway. Linked to NHTSA recall. Waymo Ojai launch (May 28-31) is proceeding on surface streets only."
+    },
+    {
+      "id": "waymo-nhtsa-ntsb-child-probe",
+      "headline": "NHTSA and NTSB dual investigation: Waymo strikes child in Santa Monica school drop-off zone",
+      "first_seen": "2026-01-29",
+      "last_status": "Ongoing — Both NHTSA and NTSB investigating January 23, 2026 incident in which a Waymo robotaxi struck a child (minor injuries, vehicle braked to 6 mph before impact) running from behind double-parked SUV during school drop-off. Follows December 2025 recall for driving past stopped school buses. No resolution announced as of 2026-06-01.",
+      "last_updated": "2026-06-01",
+      "affected_companies": ["Waymo"]
+    },
+    {
+      "id": "self-drive-act-2026",
+      "headline": "SELF DRIVE Act of 2026 (H.R. 7390) passed House committee; awaiting full floor vote",
+      "first_seen": "2026-02-09",
+      "last_status": "Active — H.R. 7390 passed House Energy and Commerce Committee 12-11 on February 9, 2026. Awaiting full House floor vote on unconfirmed schedule. Competing 'Stay in Your Lane Act' introduced to preserve state authority. No Senate action or floor vote date confirmed as of 2026-06-01. Waymo, Tesla, and Honda endorsed the SELF DRIVE Act.",
+      "last_updated": "2026-06-01",
+      "affected_companies": ["Waymo", "Apollo Go", "WeRide", "Pony.ai"]
     }
   ],
-  "last_updated": "2026-05-31",
+  "last_updated": "2026-06-01",
   "schema_version": "1.0",
   "notes": "This registry provides cross-session memory for the AV Intelligence Digest Agent. It is read at the start of each daily run (Task 0) and written back at the end (Task 7). Stories are removed when last_status contains 'Resolved' and last_updated is more than 7 days ago."
 }
