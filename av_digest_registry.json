@@ -1,33 +1,114 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "2.0",
   "last_updated": "2026-06-01",
-  "notes": "Cross-session memory for the AV Intelligence Digest Agent. Read at session start (Task 0), written back at session end (Task 7). Stories are removed when last_status contains 'Resolved' and last_updated is more than 7 days ago.",
+  "notes": "Cross-session memory for AV Intelligence Digest Agent v5.0. Read at session start (Task 0). Written back at session end (Task 7). Schema v2.0 adds source_failures, company_tracking, consecutive_no_change_days, conflict_age_days.",
+
+  "source_failures": {
+    "waymo-blog":           { "consecutive_failures": 0, "last_failed": null,         "last_success": "2026-06-01" },
+    "baidu-ir":             { "consecutive_failures": 0, "last_failed": null,         "last_success": "2026-06-01" },
+    "baidu-apollo-blog":    { "consecutive_failures": 0, "last_failed": null,         "last_success": "2026-06-01" },
+    "pony-ir":              { "consecutive_failures": 1, "last_failed": "2026-05-31", "last_success": "2026-05-30" },
+    "pony-sec":             { "consecutive_failures": 0, "last_failed": null,         "last_success": "2026-06-01" },
+    "weride-ir":            { "consecutive_failures": 1, "last_failed": "2026-05-31", "last_success": "2026-05-30" },
+    "weride-sec":           { "consecutive_failures": 0, "last_failed": null,         "last_success": "2026-06-01" },
+    "baidu-sec":            { "consecutive_failures": 0, "last_failed": null,         "last_success": "2026-06-01" },
+    "pony-globenewswire":   { "consecutive_failures": 0, "last_failed": null,         "last_success": "2026-06-01" },
+    "weride-globenewswire": { "consecutive_failures": 0, "last_failed": null,         "last_success": "2026-06-01" },
+    "auto-connected-car":   { "consecutive_failures": 0, "last_failed": null,         "last_success": "2026-06-01" },
+    "self-drive-news":      { "consecutive_failures": 0, "last_failed": null,         "last_success": "2026-06-01" },
+    "ride-ai-substack":     { "consecutive_failures": 0, "last_failed": null,         "last_success": "2026-06-01" },
+    "9to5google-av":        { "consecutive_failures": 0, "last_failed": null,         "last_success": "2026-06-01" },
+    "reuters-tech":         { "consecutive_failures": 0, "last_failed": null,         "last_success": "2026-06-01" },
+    "bloomberg-tech":       { "consecutive_failures": 0, "last_failed": null,         "last_success": "2026-06-01" },
+    "fortune-tech":         { "consecutive_failures": 0, "last_failed": null,         "last_success": "2026-06-01" },
+    "thestreet-tech":       { "consecutive_failures": 0, "last_failed": null,         "last_success": "2026-06-01" },
+    "theverge-transport":   { "consecutive_failures": 0, "last_failed": null,         "last_success": "2026-06-01" },
+    "techcrunch-transport": { "consecutive_failures": 0, "last_failed": null,         "last_success": "2026-06-01" },
+    "scmp-tech":            { "consecutive_failures": 1, "last_failed": "2026-06-01", "last_success": "2026-05-30" },
+    "yicai-global":         { "consecutive_failures": 1, "last_failed": "2026-06-01", "last_success": "2026-05-30" },
+    "36kr-english":         { "consecutive_failures": 1, "last_failed": "2026-06-01", "last_success": "2026-05-30" },
+    "caixin-global":        { "consecutive_failures": 1, "last_failed": "2026-06-01", "last_success": "2026-05-30" },
+    "pandaily":             { "consecutive_failures": 0, "last_failed": null,         "last_success": "2026-06-01" },
+    "ca-dmv":               { "consecutive_failures": 0, "last_failed": null,         "last_success": "2026-05-25" },
+    "nhtsa-sgo":            { "consecutive_failures": 0, "last_failed": null,         "last_success": "2026-05-25" },
+    "china-miit":           { "consecutive_failures": 2, "last_failed": "2026-06-01", "last_success": "2026-05-30" },
+    "china-mot":            { "consecutive_failures": 2, "last_failed": "2026-06-01", "last_success": "2026-05-30" },
+    "sec-edgar-fulltext":   { "consecutive_failures": 0, "last_failed": null,         "last_success": "2026-06-01" }
+  },
+
+  "company_tracking": {
+    "Waymo": {
+      "last_item_date": "2026-06-01",
+      "last_item_headline": "Waymo Ojai Robotaxi begins public rides in SF, LA, Phoenix",
+      "consecutive_no_item_runs": 0,
+      "consecutive_negative_days": 2
+    },
+    "Apollo Go": {
+      "last_item_date": "2026-06-01",
+      "last_item_headline": "Apollo Go Uber/Dubai commercial launch fully driverless",
+      "consecutive_no_item_runs": 0,
+      "consecutive_negative_days": 3
+    },
+    "WeRide": {
+      "last_item_date": "2026-06-01",
+      "last_item_headline": "WeRide Q1 2026 record revenue RMB 114.1M +58% YoY",
+      "consecutive_no_item_runs": 0,
+      "consecutive_negative_days": 0
+    },
+    "Pony.ai": {
+      "last_item_date": "2026-06-01",
+      "last_item_headline": "Pony.ai Q1 2026 earnings beat $34.3M +145% YoY; guidance raised",
+      "consecutive_no_item_runs": 0,
+      "consecutive_negative_days": 0
+    }
+  },
+
   "ongoing_stories": [
     {
       "id": "china-permit-freeze",
       "headline": "China nationwide AV permit freeze",
       "first_seen": "2026-04-29",
-      "last_status": "Active — no resumption timeline confirmed as of June 1, 2026. MIIT suspended all new AV permits following Apollo Go system-wide outage. Freeze blocks fleet additions, new test programmes, and new city expansions for all operators. Existing services continue to operate.",
+      "last_status": "Active — no resumption timeline confirmed as of June 1, 2026. MIIT suspended all new AV permits following Apollo Go system-wide outage. Freeze blocks fleet additions, new test programmes, and new city expansions. Existing services continue to operate.",
       "last_updated": "2026-06-01",
+      "consecutive_no_change_days": 3,
       "affected_companies": ["Apollo Go", "WeRide", "Pony.ai"],
-      "conflicting_data": "Outage trigger date disputed — March 31, 2026 cited by EVWire/DIGITIMES as initial localized Wuhan incident; April 27, 2026 cited by Bloomberg/Automotive World as system-wide recurrence that triggered the national freeze. Most likely explanation: March 31 was a localized Wuhan event; April 27 was a system-wide recurrence that prompted the MIIT action on April 29. Root cause not publicly disclosed by Baidu. Human verification recommended against Chinese-language official sources.",
+      "conflicting_data": "Outage trigger date disputed — March 31, 2026 (EVWire/DIGITIMES, localized Wuhan incident, Score: 2) vs April 27, 2026 (Bloomberg/Automotive World, system-wide recurrence, Score: 3). Working conclusion: April 27 system-wide event most likely triggered the April 29 MIIT freeze; March 31 was a precursor. LOW PRIORITY — Human verification recommended against Chinese-language official sources.",
+      "conflict_age_days": 1,
       "status_change_triggers": [
         "Official MIIT or Ministry of Transport announcement on resumption or extension",
         "Any operator receiving a new AV permit",
         "Any official timeline given or revised",
         "Any additional operator sanctioned or penalized",
         "Official Baidu statement confirming or clarifying the disputed outage trigger date",
-        "Any regulatory document citing a specific confirmed date for the triggering outage"
+        "Any regulatory document citing a specific confirmed date"
+      ]
+    },
+    {
+      "id": "apollo-go-outage-date-conflict",
+      "headline": "Apollo Go outage trigger date — March 31 vs April 27 conflict",
+      "first_seen": "2026-06-01",
+      "last_status": "Unresolved — Baidu has not publicly disclosed root cause or confirmed the triggering date. Two credible source groups cite different dates. No official clarification issued.",
+      "last_updated": "2026-06-01",
+      "consecutive_no_change_days": 0,
+      "affected_companies": ["Apollo Go"],
+      "conflicting_data": "March 31 cited by EVWire/DIGITIMES (Score: 2 — Tier 3, single corroboration, specific date). April 27 cited by Bloomberg/Automotive World (Score: 3 — Tier 3, two corroborations, more recent reporting). Working conclusion: April 27 system-wide event is the more likely MIIT trigger. LOW PRIORITY — Human verification recommended.",
+      "conflict_age_days": 0,
+      "status_change_triggers": [
+        "Official Baidu statement confirming or clarifying the date",
+        "Regulatory document from MIIT citing a specific date",
+        "Third-party independent investigation finding published by credible source"
       ]
     },
     {
       "id": "waymo-nhtsa-recall",
       "headline": "Waymo NHTSA recall — 3,791 vehicles, flooding defect",
       "first_seen": "2026-05-12",
-      "last_status": "Open — interim OTA fix deployed (tighter weather restrictions, updated map data) but no permanent fix submitted to NHTSA. NHTSA has flagged in writing that no permanent fix has been received. Ongoing flooding incidents in Texas and Atlanta through late May resulted in additional service suspensions in those cities. San Antonio resumption expected imminently pending final NHTSA remedy.",
+      "last_status": "Open — interim OTA fix deployed (tighter weather restrictions, updated map data) but no permanent fix submitted to NHTSA. NHTSA has flagged in writing that no permanent fix has been received. San Antonio resumption expected imminently pending final remedy.",
       "last_updated": "2026-06-01",
+      "consecutive_no_change_days": 1,
       "affected_companies": ["Waymo"],
       "conflicting_data": null,
+      "conflict_age_days": 0,
       "status_change_triggers": [
         "Permanent fix submitted to or approved by NHTSA",
         "Recall scope expanded or narrowed",
@@ -40,14 +121,16 @@
       "id": "waymo-freeway-suspension",
       "headline": "Waymo freeway ride suspension — construction zone edge cases",
       "first_seen": "2026-05-21",
-      "last_status": "Ongoing — surface streets operational in SF, LA, Phoenix, Miami. All freeway rides suspended after viral video showed vehicle navigating through highway construction cones; Waymo cited need to integrate technical learnings. Atlanta separately paused for flooding. Company indicated resumption 'soon' but no date given. Root cause not publicly disclosed.",
+      "last_status": "Ongoing — surface streets operational in SF, LA, Phoenix, Miami. All freeway rides suspended after viral video of vehicle navigating construction cones. Company integrating technical learnings; expects resumption 'soon' — no date given. Root cause not publicly disclosed.",
       "last_updated": "2026-06-01",
+      "consecutive_no_change_days": 1,
       "affected_companies": ["Waymo"],
       "conflicting_data": null,
+      "conflict_age_days": 0,
       "status_change_triggers": [
         "Official freeway resumption announced by Waymo",
         "Suspension extended to additional cities",
-        "Root cause publicly disclosed by Waymo",
+        "Root cause publicly disclosed",
         "Software fix confirmed deployed via OTA",
         "Atlanta operations formally resumed"
       ]
@@ -58,8 +141,10 @@
       "first_seen": "2026-03-31",
       "last_status": "Ongoing — Apollo Go service in Wuhan remains shut down following the mass vehicle immobilization incident. No resumption date announced. All other Apollo Go cities continue operating under existing permits.",
       "last_updated": "2026-06-01",
+      "consecutive_no_change_days": 5,
       "affected_companies": ["Apollo Go"],
-      "conflicting_data": "See china-permit-freeze entry for disputed dates of the triggering outage event.",
+      "conflicting_data": "See apollo-go-outage-date-conflict entry for disputed dates of the triggering event.",
+      "conflict_age_days": 1,
       "status_change_triggers": [
         "Official Apollo Go or Baidu announcement of Wuhan service resumption",
         "Regulatory approval granted for Wuhan operations to restart",
