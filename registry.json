@@ -1,0 +1,155 @@
+{
+  "schema_version": "2.0",
+  "last_updated": "2026-06-08",
+  "notes": "Cross-session memory for AV Intelligence Digest Agent v8.1",
+
+  "source_failures": {
+    "waymo-blog":           { "consecutive_failures": 0, "last_failed": null,         "last_success": "2026-06-08" },
+    "baidu-ir":             { "consecutive_failures": 5, "last_failed": "2026-06-08", "last_success": "2026-06-01" },
+    "baidu-apollo-blog":    { "consecutive_failures": 7, "last_failed": "2026-06-08", "last_success": "2026-06-01" },
+    "pony-ir":              { "consecutive_failures": 6, "last_failed": "2026-06-08", "last_success": "2026-05-30" },
+    "pony-ir-rss":          { "consecutive_failures": 5, "last_failed": "2026-06-08", "last_success": null },
+    "weride-ir-rss":        { "consecutive_failures": 5, "last_failed": "2026-06-08", "last_success": null },
+    "baidu-ir-rss":         { "consecutive_failures": 5, "last_failed": "2026-06-08", "last_success": null },
+    "pony-sec":             { "consecutive_failures": 6, "last_failed": "2026-06-08", "last_success": "2026-06-01" },
+    "weride-ir":            { "consecutive_failures": 6, "last_failed": "2026-06-08", "last_success": "2026-05-30" },
+    "weride-sec":           { "consecutive_failures": 6, "last_failed": "2026-06-08", "last_success": "2026-06-01" },
+    "baidu-sec":            { "consecutive_failures": 6, "last_failed": "2026-06-08", "last_success": "2026-06-01" },
+    "pony-globenewswire":   { "consecutive_failures": 0, "last_failed": null,         "last_success": "2026-06-08" },
+    "weride-globenewswire": { "consecutive_failures": 0, "last_failed": null,         "last_success": "2026-06-08" },
+    "auto-connected-car":   { "consecutive_failures": 0, "last_failed": null,         "last_success": "2026-06-08" },
+    "self-drive-news":      { "consecutive_failures": 0, "last_failed": null,         "last_success": "2026-06-08" },
+    "ride-ai-substack":     { "consecutive_failures": 3, "last_failed": "2026-06-08", "last_success": "2026-06-01" },
+    "9to5google-av":        { "consecutive_failures": 0, "last_failed": null,         "last_success": "2026-06-08" },
+    "reuters-tech":         { "consecutive_failures": 5, "last_failed": "2026-06-08", "last_success": "2026-06-01" },
+    "bloomberg-tech":       { "consecutive_failures": 1, "last_failed": "2026-06-08", "last_success": "2026-06-07" },
+    "fortune-tech":         { "consecutive_failures": 0, "last_failed": null,         "last_success": "2026-06-08" },
+    "thestreet-tech":       { "consecutive_failures": 4, "last_failed": "2026-06-08", "last_success": "2026-06-01" },
+    "theverge-transport":   { "consecutive_failures": 5, "last_failed": "2026-06-08", "last_success": "2026-06-01" },
+    "techcrunch-transport": { "consecutive_failures": 0, "last_failed": null,         "last_success": "2026-06-08" },
+    "scmp-tech":            { "consecutive_failures": 0, "last_failed": null,         "last_success": "2026-06-08" },
+    "yicai-global":         { "consecutive_failures": 0, "last_failed": null,         "last_success": "2026-06-08" },
+    "36kr-english":         { "consecutive_failures": 5, "last_failed": "2026-06-08", "last_success": "2026-05-30" },
+    "caixin-global":        { "consecutive_failures": 0, "last_failed": null,         "last_success": "2026-06-08" },
+    "pandaily":             { "consecutive_failures": 7, "last_failed": "2026-06-08", "last_success": "2026-06-01" },
+    "ca-dmv":               { "consecutive_failures": 0, "last_failed": null,         "last_success": "2026-05-25" },
+    "nhtsa-sgo":            { "consecutive_failures": 0, "last_failed": null,         "last_success": "2026-06-02" },
+    "china-miit":           { "consecutive_failures": 8, "last_failed": "2026-06-08", "last_success": "2026-05-30" },
+    "china-mot":            { "consecutive_failures": 8, "last_failed": "2026-06-08", "last_success": "2026-05-30" },
+    "sec-edgar-fulltext":   { "consecutive_failures": 5, "last_failed": "2026-06-08", "last_success": "2026-06-01" }
+  },
+
+  "company_tracking": {
+    "Waymo": {
+      "last_item_date": "2026-06-08",
+      "last_item_headline": "London robotaxi race — Waymo tests 100 Jaguar I-Paces as Uber+Wayve announce commercial timeline",
+      "consecutive_no_item_runs": 0,
+      "consecutive_negative_days": 11
+    },
+    "Apollo Go": {
+      "last_item_date": "2026-06-07",
+      "last_item_headline": "Apollo Go Respect Elderly Week free rides for seniors 60+ June 7-11",
+      "consecutive_no_item_runs": 0,
+      "consecutive_negative_days": 11
+    },
+    "WeRide": {
+      "last_item_date": "2026-06-08",
+      "last_item_headline": "WeRide Roland-Garros Robobus concludes third consecutive year with Renault Group",
+      "consecutive_no_item_runs": 1,
+      "consecutive_negative_days": 0
+    },
+    "Pony.ai": {
+      "last_item_date": "2026-06-08",
+      "last_item_headline": "Pony.ai AGM all resolutions adopted directors re-elected share mandates approved",
+      "consecutive_no_item_runs": 0,
+      "consecutive_negative_days": 0
+    }
+  },
+
+  "ongoing_stories": [
+    {
+      "id": "china-permit-freeze",
+      "headline": "China nationwide AV permit freeze",
+      "first_seen": "2026-04-29",
+      "last_status": "Active Day 40 as of 2026-06-08. No resumption timeline announced. Nikkei end-of-May deadline passed with no MIIT announcement. All three China-operating companies (Apollo Go, WeRide, Pony.ai) unable to expand fleet or enter new cities. MIIT/MOT sources network-restricted. Outage trigger date conflict previously RESOLVED: March 31 confirmed.",
+      "last_updated": "2026-06-08",
+      "consecutive_no_change_days": 15,
+      "affected_companies": ["Apollo Go", "WeRide", "Pony.ai"],
+      "conflicting_data": null,
+      "conflict_age_days": 0,
+      "status_change_triggers": ["MIIT/MoT resumption announcement", "New permit issued to any operator", "Official timeline given", "Additional operator sanctioned"]
+    },
+    {
+      "id": "apollo-go-outage-date-conflict",
+      "headline": "Apollo Go Wuhan outage trigger date — RESOLVED 2026-06-08",
+      "first_seen": "2026-06-01",
+      "last_status": "RESOLVED 2026-06-08. March 31 2026 evening (~21:00 local) confirmed by Wuhan PSB Traffic Police April 1 government report, CnEVPost, TechNode, CNN, BusinessDay. April 27 date has zero credible source support — conflict cleared. Registry entry to be removed after 7-day retention window (remove after 2026-06-15).",
+      "last_updated": "2026-06-08",
+      "consecutive_no_change_days": 0,
+      "affected_companies": ["Apollo Go"],
+      "conflicting_data": null,
+      "conflict_age_days": 0,
+      "status_change_triggers": ["N/A — resolved"]
+    },
+    {
+      "id": "waymo-nhtsa-recall",
+      "headline": "Waymo NHTSA recall 3,791 vehicles flooding defect",
+      "first_seen": "2026-05-12",
+      "last_status": "Open Day 27 as of 2026-06-08. Interim constraints deployed OTA (flash-flood zone avoidance). Final software remedy still in development per NHTSA filing. Affected vehicles: all 5th- and 6th-gen ADS across Phoenix, SF, LA, Austin, San Antonio, Atlanta. No new update June 8.",
+      "last_updated": "2026-06-08",
+      "consecutive_no_change_days": 13,
+      "affected_companies": ["Waymo"],
+      "conflicting_data": null,
+      "conflict_age_days": 0,
+      "status_change_triggers": ["Permanent fix submitted or approved", "Recall scope changed", "NHTSA closes or escalates", "New interim fix issued"]
+    },
+    {
+      "id": "waymo-freeway-suspension",
+      "headline": "Waymo freeway ride suspension construction zone edge cases",
+      "first_seen": "2026-05-21",
+      "last_status": "Ongoing Day 18 as of 2026-06-08. All freeway rides suspended in Bay Area, Los Angeles, Phoenix, and Miami. Surface street operations unaffected. Root cause: construction zone navigation edge cases. Trigger: viral May 21 incident (vehicle blasted through construction cones, pursued by police). No resumption date — Waymo says 'soon'. No new update June 8.",
+      "last_updated": "2026-06-08",
+      "consecutive_no_change_days": 13,
+      "affected_companies": ["Waymo"],
+      "conflicting_data": null,
+      "conflict_age_days": 0,
+      "status_change_triggers": ["Freeway resumption officially announced", "Suspension extended to additional cities", "Root cause disclosed", "Software fix confirmed deployed"]
+    },
+    {
+      "id": "apollo-go-wuhan-shutdown",
+      "headline": "Apollo Go Wuhan commercial service status post-outage",
+      "first_seen": "2026-03-31",
+      "last_status": "Status contested as of 2026-06-08 Day 69. Conflicting data: multiple Tier 2-3 sources suggest Wuhan commercial service has not resumed post-March 31 outage; one unverified source suggests partial resumption. Working conclusion: shut down (Score 4 vs Score 0). HIGH PRIORITY. conflict_age_days 11. ESCALATED per Task 3a.",
+      "last_updated": "2026-06-08",
+      "consecutive_no_change_days": 17,
+      "affected_companies": ["Apollo Go"],
+      "conflicting_data": "Automotive World / CNBC: Wuhan service shut down (Score 4). Anonymous tourist forum: partial service operational (Score 0). Working conclusion: shut down. HIGH PRIORITY escalated — conflict unresolved for 11 days.",
+      "conflict_age_days": 11,
+      "status_change_triggers": ["Official Apollo Go / Baidu Wuhan resumption announcement", "Regulatory approval for restart", "Tier 1-3 source confirming operations", "Tier 1-3 source confirming continued shutdown"]
+    },
+    {
+      "id": "waymo-ojai-china-geopolitics",
+      "headline": "Waymo Ojai US Senate scrutiny of Zeekr/Geely manufacturing partnership",
+      "first_seen": "2026-05-28",
+      "last_status": "Active as of 2026-06-08 Day 11 unchanged. No new Congressional action following February 2026 Senate Commerce hearing (Sen. Moreno accusations). No follow-up hearing scheduled. Waymo defense: Zeekr vehicles have no connectivity or smarts — Waymo installs ADS in US. Ojai deployed in US operations; London uses Jaguar I-Pace fleet. No new Senate statement or AV legislation movement detected June 8. conflict_age_days 11. HIGH PRIORITY ESCALATED.",
+      "last_updated": "2026-06-08",
+      "consecutive_no_change_days": 11,
+      "affected_companies": ["Waymo"],
+      "conflicting_data": "No confirmed follow-up Senate hearing date. Original hearing February 2026. conflict_age_days 11. HIGH PRIORITY.",
+      "conflict_age_days": 11,
+      "status_change_triggers": ["AV legislation introduced referencing Zeekr/Geely", "Senate committee formal report", "USTR or Commerce formal review launched", "Waymo formal response or supply-chain disclosure"]
+    },
+    {
+      "id": "london-robotaxi-competition",
+      "headline": "London robotaxi race: Waymo testing vs Uber+Wayve commercial launch plan",
+      "first_seen": "2026-06-08",
+      "last_status": "New as of 2026-06-08. Waymo testing 100 Jaguar I-Pace vehicles across 100-sq-mile London area (began April 2026, human safety operators). Uber and Wayve (UK-based AV startup) announced branded Ford Mustang Mach-E fleet, commercial service targeting coming months pending UK AV regulatory approval. UK government supportive but framework not finalized. No commercial launch date set for any party.",
+      "last_updated": "2026-06-08",
+      "consecutive_no_change_days": 0,
+      "affected_companies": ["Waymo"],
+      "conflicting_data": null,
+      "conflict_age_days": 0,
+      "status_change_triggers": ["UK AV regulatory framework finalized", "Commercial service launch by Waymo or Uber+Wayve", "Fleet expansion announced", "Regulatory approval granted or denied"]
+    }
+  ]
+}
